@@ -20,6 +20,12 @@ A comprehensive automated calling solution for Ios users, featuring both a fully
 - **🌙 Snooze Functionality**: Temporary pause for call setups
 - **📋 Export Capabilities**: CSV export of call logs
 
+<img width="425" height="843" alt="image" src="https://github.com/user-attachments/assets/d4347dce-6843-4238-80e1-21a6e41c1449" />
+<img width="438" height="840" alt="image" src="https://github.com/user-attachments/assets/099e9a34-f6ee-4ebf-9e4e-0bbda15a7bbd" />
+<img width="408" height="842" alt="image" src="https://github.com/user-attachments/assets/09909915-1c01-460f-9f61-4c7ccb43db94" />
+
+
+
 ## 🚀 Quick Start
 
 ### Web Demo (Instant Access)
