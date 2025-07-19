@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		992403032E2C146E00F6FF79 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992403022E2C146E00F6FF79 /* CallKit.framework */; };
+		992403052E2C147800F6FF79 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992403042E2C147800F6FF79 /* UserNotifications.framework */; };
+		992403072E2C147F00F6FF79 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992403062E2C147F00F6FF79 /* CoreHaptics.framework */; };
+		992403092E2C148600F6FF79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992403082E2C148600F6FF79 /* AVFoundation.framework */; };
+		992403142E2C17AA00F6FF79 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403122E2C17AA00F6FF79 /* DataManager.swift */; };
+		992403152E2C17AA00F6FF79 /* CallScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403102E2C17AA00F6FF79 /* CallScheduler.swift */; };
+		992403162E2C17AA00F6FF79 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403132E2C17AA00F6FF79 /* ValidationService.swift */; };
+		992403172E2C17AA00F6FF79 /* CallStateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403112E2C17AA00F6FF79 /* CallStateMonitor.swift */; };
+		9924031B2E2C17FC00F6FF79 /* CallLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403182E2C17FC00F6FF79 /* CallLogEntry.swift */; };
+		9924031F2E2C181100F6FF79 /* CallSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9924031D2E2C181100F6FF79 /* CallSetupViewController.swift */; };
+		992403202E2C181100F6FF79 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9924031E2E2C181100F6FF79 /* MainDashboardViewController.swift */; };
+		992403212E2C181100F6FF79 /* CallLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9924031C2E2C181100F6FF79 /* CallLogViewController.swift */; };
+		992403242E2C182400F6FF79 /* CallSetupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403232E2C182400F6FF79 /* CallSetupTableViewCell.swift */; };
+		992403252E2C182400F6FF79 /* CallLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992403222E2C182400F6FF79 /* CallLogTableViewCell.swift */; };
+		99C1FD072E2C2A12001F1E19 /* CallSetup+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C1FD062E2C2A0B001F1E19 /* CallSetup+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		992402D22E2C134B00F6FF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992402B02E2C134A00F6FF79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992402B72E2C134A00F6FF79;
+			remoteInfo = AutoCallerUK;
+		};
+		992402DC2E2C134B00F6FF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992402B02E2C134A00F6FF79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992402B72E2C134A00F6FF79;
+			remoteInfo = AutoCallerUK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		992402B82E2C134A00F6FF79 /* AutoCallerUK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCallerUK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		992402D12E2C134B00F6FF79 /* AutoCallerUKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCallerUKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992402DB2E2C134B00F6FF79 /* AutoCallerUKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCallerUKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992403022E2C146E00F6FF79 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		992403042E2C147800F6FF79 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		992403062E2C147F00F6FF79 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		992403082E2C148600F6FF79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		992403102E2C17AA00F6FF79 /* CallScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScheduler.swift; sourceTree = "<group>"; };
+		992403112E2C17AA00F6FF79 /* CallStateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStateMonitor.swift; sourceTree = "<group>"; };
+		992403122E2C17AA00F6FF79 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		992403132E2C17AA00F6FF79 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		992403182E2C17FC00F6FF79 /* CallLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogEntry.swift; sourceTree = "<group>"; };
+		9924031C2E2C181100F6FF79 /* CallLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogViewController.swift; sourceTree = "<group>"; };
+		9924031D2E2C181100F6FF79 /* CallSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSetupViewController.swift; sourceTree = "<group>"; };
+		9924031E2E2C181100F6FF79 /* MainDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardViewController.swift; sourceTree = "<group>"; };
+		992403222E2C182400F6FF79 /* CallLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogTableViewCell.swift; sourceTree = "<group>"; };
+		992403232E2C182400F6FF79 /* CallSetupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSetupTableViewCell.swift; sourceTree = "<group>"; };
+		99C1FD062E2C2A0B001F1E19 /* CallSetup+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallSetup+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		992402E32E2C134B00F6FF79 /* Exceptions for "AutoCallerUK" folder in "AutoCallerUK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 992402B72E2C134A00F6FF79 /* AutoCallerUK */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		992402BA2E2C134A00F6FF79 /* AutoCallerUK */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				992402E32E2C134B00F6FF79 /* Exceptions for "AutoCallerUK" folder in "AutoCallerUK" target */,
+			);
+			path = AutoCallerUK;
+			sourceTree = "<group>";
+		};
+		992402D42E2C134B00F6FF79 /* AutoCallerUKTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AutoCallerUKTests;
+			sourceTree = "<group>";
+		};
+		992402DE2E2C134B00F6FF79 /* AutoCallerUKUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AutoCallerUKUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		992402B52E2C134A00F6FF79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992403092E2C148600F6FF79 /* AVFoundation.framework in Frameworks */,
+				992403052E2C147800F6FF79 /* UserNotifications.framework in Frameworks */,
+				992403072E2C147F00F6FF79 /* CoreHaptics.framework in Frameworks */,
+				992403032E2C146E00F6FF79 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402CE2E2C134B00F6FF79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402D82E2C134B00F6FF79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		992402AF2E2C134A00F6FF79 = {
+			isa = PBXGroup;
+			children = (
+				992402F22E2C138F00F6FF79 /* Views */,
+				992402F12E2C138400F6FF79 /* ViewControllers */,
+				992402F02E2C137E00F6FF79 /* Services */,
+				992402EF2E2C137200F6FF79 /* Models */,
+				992402BA2E2C134A00F6FF79 /* AutoCallerUK */,
+				992402D42E2C134B00F6FF79 /* AutoCallerUKTests */,
+				992402DE2E2C134B00F6FF79 /* AutoCallerUKUITests */,
+				992403012E2C146E00F6FF79 /* Frameworks */,
+				992402B92E2C134A00F6FF79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		992402B92E2C134A00F6FF79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992402B82E2C134A00F6FF79 /* AutoCallerUK.app */,
+				992402D12E2C134B00F6FF79 /* AutoCallerUKTests.xctest */,
+				992402DB2E2C134B00F6FF79 /* AutoCallerUKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		992402EF2E2C137200F6FF79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99C1FD062E2C2A0B001F1E19 /* CallSetup+Extension.swift */,
+				992403182E2C17FC00F6FF79 /* CallLogEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		992402F02E2C137E00F6FF79 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				992403102E2C17AA00F6FF79 /* CallScheduler.swift */,
+				992403112E2C17AA00F6FF79 /* CallStateMonitor.swift */,
+				992403122E2C17AA00F6FF79 /* DataManager.swift */,
+				992403132E2C17AA00F6FF79 /* ValidationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		992402F12E2C138400F6FF79 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9924031C2E2C181100F6FF79 /* CallLogViewController.swift */,
+				9924031D2E2C181100F6FF79 /* CallSetupViewController.swift */,
+				9924031E2E2C181100F6FF79 /* MainDashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		992402F22E2C138F00F6FF79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				992403222E2C182400F6FF79 /* CallLogTableViewCell.swift */,
+				992403232E2C182400F6FF79 /* CallSetupTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		992403012E2C146E00F6FF79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				992403082E2C148600F6FF79 /* AVFoundation.framework */,
+				992403062E2C147F00F6FF79 /* CoreHaptics.framework */,
+				992403042E2C147800F6FF79 /* UserNotifications.framework */,
+				992403022E2C146E00F6FF79 /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		992402B72E2C134A00F6FF79 /* AutoCallerUK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992402E42E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUK" */;
+			buildPhases = (
+				992402B42E2C134A00F6FF79 /* Sources */,
+				992402B52E2C134A00F6FF79 /* Frameworks */,
+				992402B62E2C134A00F6FF79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				992402BA2E2C134A00F6FF79 /* AutoCallerUK */,
+			);
+			name = AutoCallerUK;
+			packageProductDependencies = (
+			);
+			productName = AutoCallerUK;
+			productReference = 992402B82E2C134A00F6FF79 /* AutoCallerUK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		992402D02E2C134B00F6FF79 /* AutoCallerUKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992402E92E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUKTests" */;
+			buildPhases = (
+				992402CD2E2C134B00F6FF79 /* Sources */,
+				992402CE2E2C134B00F6FF79 /* Frameworks */,
+				992402CF2E2C134B00F6FF79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992402D32E2C134B00F6FF79 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				992402D42E2C134B00F6FF79 /* AutoCallerUKTests */,
+			);
+			name = AutoCallerUKTests;
+			packageProductDependencies = (
+			);
+			productName = AutoCallerUKTests;
+			productReference = 992402D12E2C134B00F6FF79 /* AutoCallerUKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		992402DA2E2C134B00F6FF79 /* AutoCallerUKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992402EC2E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUKUITests" */;
+			buildPhases = (
+				992402D72E2C134B00F6FF79 /* Sources */,
+				992402D82E2C134B00F6FF79 /* Frameworks */,
+				992402D92E2C134B00F6FF79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992402DD2E2C134B00F6FF79 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				992402DE2E2C134B00F6FF79 /* AutoCallerUKUITests */,
+			);
+			name = AutoCallerUKUITests;
+			packageProductDependencies = (
+			);
+			productName = AutoCallerUKUITests;
+			productReference = 992402DB2E2C134B00F6FF79 /* AutoCallerUKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		992402B02E2C134A00F6FF79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					992402B72E2C134A00F6FF79 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					992402D02E2C134B00F6FF79 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 992402B72E2C134A00F6FF79;
+					};
+					992402DA2E2C134B00F6FF79 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 992402B72E2C134A00F6FF79;
+					};
+				};
+			};
+			buildConfigurationList = 992402B32E2C134A00F6FF79 /* Build configuration list for PBXProject "AutoCallerUK" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 992402AF2E2C134A00F6FF79;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 992402B92E2C134A00F6FF79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				992402B72E2C134A00F6FF79 /* AutoCallerUK */,
+				992402D02E2C134B00F6FF79 /* AutoCallerUKTests */,
+				992402DA2E2C134B00F6FF79 /* AutoCallerUKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		992402B62E2C134A00F6FF79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402CF2E2C134B00F6FF79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402D92E2C134B00F6FF79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		992402B42E2C134A00F6FF79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992403242E2C182400F6FF79 /* CallSetupTableViewCell.swift in Sources */,
+				992403252E2C182400F6FF79 /* CallLogTableViewCell.swift in Sources */,
+				9924031B2E2C17FC00F6FF79 /* CallLogEntry.swift in Sources */,
+				992403142E2C17AA00F6FF79 /* DataManager.swift in Sources */,
+				99C1FD072E2C2A12001F1E19 /* CallSetup+Extension.swift in Sources */,
+				992403152E2C17AA00F6FF79 /* CallScheduler.swift in Sources */,
+				992403162E2C17AA00F6FF79 /* ValidationService.swift in Sources */,
+				992403172E2C17AA00F6FF79 /* CallStateMonitor.swift in Sources */,
+				9924031F2E2C181100F6FF79 /* CallSetupViewController.swift in Sources */,
+				992403202E2C181100F6FF79 /* MainDashboardViewController.swift in Sources */,
+				992403212E2C181100F6FF79 /* CallLogViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402CD2E2C134B00F6FF79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992402D72E2C134B00F6FF79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		992402D32E2C134B00F6FF79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992402B72E2C134A00F6FF79 /* AutoCallerUK */;
+			targetProxy = 992402D22E2C134B00F6FF79 /* PBXContainerItemProxy */;
+		};
+		992402DD2E2C134B00F6FF79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992402B72E2C134A00F6FF79 /* AutoCallerUK */;
+			targetProxy = 992402DC2E2C134B00F6FF79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		992402E52E2C134B00F6FF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoCallerUK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		992402E62E2C134B00F6FF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoCallerUK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		992402E72E2C134B00F6FF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		992402E82E2C134B00F6FF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		992402EA2E2C134B00F6FF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCallerUK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoCallerUK";
+			};
+			name = Debug;
+		};
+		992402EB2E2C134B00F6FF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCallerUK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoCallerUK";
+			};
+			name = Release;
+		};
+		992402ED2E2C134B00F6FF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCallerUK;
+			};
+			name = Debug;
+		};
+		992402EE2E2C134B00F6FF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prazaImmortal.AutoCallerUKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCallerUK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		992402B32E2C134A00F6FF79 /* Build configuration list for PBXProject "AutoCallerUK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992402E72E2C134B00F6FF79 /* Debug */,
+				992402E82E2C134B00F6FF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992402E42E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992402E52E2C134B00F6FF79 /* Debug */,
+				992402E62E2C134B00F6FF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992402E92E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992402EA2E2C134B00F6FF79 /* Debug */,
+				992402EB2E2C134B00F6FF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992402EC2E2C134B00F6FF79 /* Build configuration list for PBXNativeTarget "AutoCallerUKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992402ED2E2C134B00F6FF79 /* Debug */,
+				992402EE2E2C134B00F6FF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 992402B02E2C134A00F6FF79 /* Project object */;
+}
